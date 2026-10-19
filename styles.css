@@ -81,8 +81,8 @@ img { max-width: 100%; display: block; }
 .hero {
   position: relative;
   background:
-    linear-gradient(115deg, rgba(20, 20, 20, 0.96) 45%, rgba(20, 20, 20, 0.75)),
-    repeating-linear-gradient(90deg, #222 0 2px, transparent 2px 60px),
+    linear-gradient(115deg, rgba(10, 10, 10, 0.95) 40%, rgba(10, 10, 10, 0.7)),
+    var(--hero-img, none) center / cover no-repeat,
     var(--black);
   color: var(--white);
   padding: 6rem 0 7rem;
@@ -120,20 +120,46 @@ img { max-width: 100%; display: block; }
 .section__lead { max-width: 680px; margin: -1.5rem 0 2.5rem; color: var(--gray-700); }
 
 .grid { display: grid; gap: 1.5rem; }
-.services { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.services { grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
 .card {
   background: var(--white);
   border: 1px solid #e6e6e6;
-  border-top: 5px solid var(--accent);
   border-radius: var(--radius);
-  padding: 2rem 1.6rem;
+  overflow: hidden;
   box-shadow: var(--shadow);
   transition: transform 0.2s;
 }
 .card:hover { transform: translateY(-4px); }
-.card__icon { font-size: 2.2rem; margin-bottom: 0.8rem; }
-.card h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
-.card p { color: var(--gray-500); }
+.card__img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-bottom: 4px solid var(--accent); }
+.card__body { padding: 1.2rem 1.3rem 1.5rem; }
+.card h3 { font-size: 1.35rem; margin-bottom: 0.4rem; }
+.card p { color: var(--gray-500); font-size: 0.95rem; }
+
+/* Renta de equipos */
+.equipment { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.equip { background: var(--black); color: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+.equip img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.equip div { padding: 1rem 1.2rem 1.2rem; }
+.equip h3 { font-size: 1.4rem; }
+.equip__cap { color: var(--accent-light); font-weight: 600; font-size: 1.1rem; }
+.tags { list-style: none; display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.8rem; }
+.tags li { background: var(--white); border: 2px solid var(--accent); color: var(--black); font-weight: 600; padding: 0.4rem 1rem; border-radius: 999px; }
+
+/* Misión, visión y valores */
+.about p + p { margin-top: 1rem; }
+.about__goal { border-left: 4px solid var(--accent); padding-left: 1rem; }
+.about__img { width: 100%; border-radius: var(--radius); aspect-ratio: 4 / 3; object-fit: cover; }
+.mv { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 3rem 0; }
+.mv__item { background: var(--gray-700); border-top: 4px solid var(--accent); border-radius: var(--radius); padding: 1.6rem; color: #d6d6d6; }
+.mv__item h3 { color: var(--white); font-size: 1.7rem; margin-bottom: 0.6rem; }
+.mv__item ul { padding-left: 1.2rem; display: grid; gap: 0.3rem; }
+.values__title { font-size: 1.7rem; margin-bottom: 1rem; }
+.values { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+
+/* Galería */
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.8rem; }
+.gallery img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 8px; transition: transform 0.2s; }
+.gallery img:hover { transform: scale(1.03); }
 
 /* Nosotros */
 .about { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
@@ -145,6 +171,7 @@ img { max-width: 100%; display: block; }
   padding: 1rem 1.2rem;
   border-radius: 6px;
   display: grid;
+  align-content: start;
 }
 .features span { color: #c8c8c8; }
 
@@ -232,7 +259,7 @@ img { max-width: 100%; display: block; }
   .nav--open { display: flex; }
   .nav a { padding: 0.8rem 0; border-bottom: 1px solid #eee; }
   .nav .btn { margin-top: 0.8rem; text-align: center; border-bottom: 0; }
-  .about, .contact { grid-template-columns: 1fr; }
+  .about, .contact, .mv { grid-template-columns: 1fr; }
   .hero { padding: 3rem 0 5rem; }
   .hero__grid { grid-template-columns: 1fr; gap: 2rem; }
   .hero__logo { order: -1; }

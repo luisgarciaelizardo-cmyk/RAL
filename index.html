@@ -31,7 +31,9 @@
       <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
       <nav class="nav">
         <a href="#servicios">Servicios</a>
+        <a href="#equipos">Equipos</a>
         <a href="#nosotros">Nosotros</a>
+        <a href="#galeria">Galería</a>
         <a href="#ventas">Ventas</a>
         <a href="#redes">Redes</a>
         <a href="#contacto" class="btn btn--small">Contacto</a>
@@ -40,13 +42,13 @@
   </header>
 
   <!-- Hero -->
-  <section class="hero">
+  <section class="hero" style="--hero-img: url('assets/fotos/portada.jpg')">
     <div class="hero__stripes" aria-hidden="true"></div>
     <div class="container hero__grid">
     <div class="hero__content">
       <p class="eyebrow">GS RAL · Proveedores Industriales</p>
-      <h1>Grúas y maniobras industriales con seguridad y precisión</h1>
-      <p class="hero__lead">Movemos lo que tu industria necesita: maquinaria pesada, equipos y cargas especiales en Saltillo y la región.</p>
+      <h1>¡Tu tiempo y seguridad son nuestra prioridad!</h1>
+      <p class="hero__lead">Rigging, maniobras industriales, traslados y renta de grúas, montacargas y lowboy en Saltillo y la región.</p>
       <div class="hero__actions">
         <a href="https://wa.me/528445376628?text=Hola%20RAL%2C%20quisiera%20cotizar%20un%20servicio" class="btn btn--whatsapp" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
         <a href="tel:8444390532" class="btn btn--outline">Llamar a oficina</a>
@@ -65,53 +67,132 @@
       <h2>Nuestros servicios</h2>
       <div class="grid services">
         <article class="card">
-          <div class="card__icon">🏗️</div>
-          <h3>Maniobras industriales</h3>
-          <p>Planeación y ejecución de maniobras de izaje dentro de plantas y obras, con personal capacitado.</p>
+          <img src="assets/fotos/rigging.jpg" alt="Grúa izando un equipo" class="card__img" loading="lazy">
+          <div class="card__body"><h3>Rigging</h3><p>Planeación e izaje de cargas con aparejos, grúas y personal especializado.</p></div>
         </article>
         <article class="card">
-          <div class="card__icon">⚙️</div>
-          <h3>Movimiento de maquinaria</h3>
-          <p>Reubicación, montaje y desmontaje de maquinaria y equipo industrial de forma segura.</p>
+          <img src="assets/fotos/maniobras.jpg" alt="Maniobra industrial dentro de una planta" class="card__img" loading="lazy">
+          <div class="card__body"><h3>Maniobras industriales</h3><p>Maniobras dentro de plantas y naves industriales, cuidando a tu personal y tus instalaciones.</p></div>
         </article>
         <article class="card">
-          <div class="card__icon">⬆️</div>
-          <h3>Renta de equipos de elevación</h3>
-          <p>Equipos para trabajos en altura y levantamiento de cargas, disponibles para tu proyecto.</p>
+          <img src="assets/fotos/carga.jpg" alt="Montacargas descargando un equipo" class="card__img" loading="lazy">
+          <div class="card__body"><h3>Carga / descarga</h3><p>Carga y descarga de equipos y maquinaria pesada con montacargas y grúas.</p></div>
         </article>
         <article class="card">
-          <div class="card__icon">🚛</div>
-          <h3>Traslados</h3>
-          <p>Transporte de maquinaria y cargas pesadas de punto a punto, local y foráneo.</p>
+          <img src="assets/fotos/traslados.jpg" alt="Maquinaria sobre plataforma para traslado" class="card__img" loading="lazy">
+          <div class="card__body"><h3>Traslados de equipo y maquinaria</h3><p>Transporte de maquinaria en plataformas y lowboy, de punto a punto.</p></div>
         </article>
         <article class="card">
-          <div class="card__icon">📦</div>
-          <h3>Renta de montacargas</h3>
-          <p>Montacargas para carga, descarga y acomodo de material en almacén o planta.</p>
+          <img src="assets/fotos/reubicacion.jpg" alt="Reubicación de equipo industrial" class="card__img" loading="lazy">
+          <div class="card__body"><h3>Reubicación de equipo</h3><p>Movemos tus equipos dentro de la planta o hacia una nueva ubicación.</p></div>
         </article>
         <article class="card">
-          <div class="card__icon">🪝</div>
-          <h3>Renta de grúas</h3>
-          <p>Grúas para izaje de cargas pesadas, con operador, según las necesidades de tu maniobra.</p>
+          <img src="assets/fotos/instalacion.jpg" alt="Instalación de maquinaria en planta" class="card__img" loading="lazy">
+          <div class="card__body"><h3>Instalación de maquinaria</h3><p>Instalación de todo tipo de maquinaria, colocada en su posición final.</p></div>
+        </article>
+        <article class="card">
+          <img src="assets/fotos/plantas.jpg" alt="Montaje de equipo en planta industrial" class="card__img" loading="lazy">
+          <div class="card__body"><h3>Montaje y desmantelamiento de plantas</h3><p>Montaje y desmantelamiento de plantas industriales completas.</p></div>
+        </article>
+        <article class="card">
+          <img src="assets/fotos/estructuras.jpg" alt="Grúa montando una estructura" class="card__img" loading="lazy">
+          <div class="card__body"><h3>Montaje de estructuras</h3><p>Izaje y montaje de estructuras metálicas en obra.</p></div>
         </article>
       </div>
     </div>
   </section>
 
+  <!-- Renta de equipos -->
+  <section class="section section--alt" id="equipos">
+    <div class="container">
+      <p class="eyebrow">Renta de equipos para maniobras</p>
+      <h2>Nuestro equipo</h2>
+      <div class="grid equipment">
+        <article class="equip">
+          <img src="assets/fotos/gruas.jpg" alt="Grúa todo terreno" loading="lazy">
+          <div><h3>Grúas A/T</h3><p class="equip__cap">20 a 100 ton</p></div>
+        </article>
+        <article class="equip">
+          <img src="assets/fotos/gantry.jpg" alt="Grúa Titán dentro de nave" loading="lazy">
+          <div><h3>Grúas Titán</h3><p class="equip__cap">12 a 22 ton</p></div>
+        </article>
+        <article class="equip">
+          <img src="assets/fotos/g5.jpg" alt="Grúa de pasillo" loading="lazy">
+          <div><h3>Grúas de pasillo</h3><p class="equip__cap">8 a 15 ton</p></div>
+        </article>
+        <article class="equip">
+          <img src="assets/fotos/montacargas.jpg" alt="Montacargas de alta capacidad" loading="lazy">
+          <div><h3>Montacargas</h3><p class="equip__cap">5,000 a 100,000 lbs</p></div>
+        </article>
+        <article class="equip">
+          <img src="assets/fotos/lowboy.jpg" alt="Lowboy con maquinaria" loading="lazy">
+          <div><h3>Lowboy</h3><p class="equip__cap">30 a 80 ton</p></div>
+        </article>
+      </div>
+      <ul class="tags">
+        <li>Herramienta</li><li>Gantry</li><li>Equipo de elevación</li><li>Plataformas industriales</li>
+      </ul>
+    </div>
+  </section>
+
   <!-- Nosotros -->
   <section class="section section--dark" id="nosotros">
-    <div class="container about">
-      <div>
-        <p class="eyebrow">Por qué elegirnos</p>
-        <h2>Fuerza, experiencia y compromiso</h2>
-        <p>En <strong>RAL</strong> somos proveedores industriales especializados en grúas y maniobras. Atendemos a la industria de Saltillo y la región con soluciones a la medida: desde un traslado sencillo hasta la reubicación completa de una línea de producción.</p>
+    <div class="container">
+      <div class="about">
+        <div>
+          <p class="eyebrow">Acerca de nosotros</p>
+          <h2>GS RAL Proveedores Industriales S.A. de C.V.</h2>
+          <p>Somos una empresa mexicana dedicada a brindar todo tipo de solución en el sector de servicios industriales, ofreciendo soluciones personalizadas que satisfacen las demandas específicas de nuestros clientes.</p>
+          <p class="about__goal"><strong>Nuestro objetivo:</strong> ofrecer un servicio de alta calidad que satisfaga las necesidades y expectativas de nuestros clientes, garantizando calidad, rapidez, seguridad y el mejor precio posible.</p>
+        </div>
+        <img src="assets/fotos/flota.jpg" alt="Tractocamión de GS RAL" class="about__img" loading="lazy">
       </div>
-      <ul class="features">
-        <li><strong>Seguridad ante todo</strong><span>Maniobras planeadas para proteger a tu personal y tus equipos.</span></li>
-        <li><strong>Atención directa</strong><span>Hablas con nuestro equipo de ventas y recibes respuesta rápida.</span></li>
-        <li><strong>Equipo versátil</strong><span>Grúas, montacargas y equipos de elevación para cada tipo de carga.</span></li>
-        <li><strong>Cobertura regional</strong><span>Servicio en Saltillo, Ramos Arizpe, Arteaga y alrededores.</span></li>
+      <div class="mv">
+        <div class="mv__item">
+          <h3>Misión</h3>
+          <p>Lograr satisfacer las necesidades y expectativas de nuestros clientes, realizando un trabajo de alta calidad, teniendo como prioridad el profesionalismo, puntualidad, seguridad y costos competitivos.</p>
+        </div>
+        <div class="mv__item">
+          <h3>Visión</h3>
+          <ul>
+            <li>Ser la compañía líder en maniobras industriales.</li>
+            <li>Ser una empresa competitiva, confiable y de alta calidad.</li>
+            <li>Ser la primera opción para nuestros clientes.</li>
+            <li>Generar lealtad en nuestros clientes por la satisfacción obtenida a través de nuestros servicios.</li>
+          </ul>
+        </div>
+      </div>
+      <h3 class="values__title">Nuestros valores</h3>
+      <ul class="features values">
+        <li><strong>Profesionalismo</strong><span>Somos conocedores y expertos en nuestro trabajo, y nos enfocamos en que su calidad sea cada vez mejor.</span></li>
+        <li><strong>Responsabilidad</strong><span>Cumplimos nuestras obligaciones con la empresa, los clientes y la sociedad.</span></li>
+        <li><strong>Compromiso</strong><span>Atendemos los requerimientos de nuestros clientes de manera oportuna y eficaz.</span></li>
+        <li><strong>Puntualidad</strong><span>Disciplina de cumplir en tiempo y forma nuestros compromisos.</span></li>
+        <li><strong>Honestidad</strong><span>Actuamos con honradez y total transparencia dentro y fuera de la empresa.</span></li>
+        <li><strong>Unidad</strong><span>Trabajamos como un solo equipo en cada maniobra.</span></li>
       </ul>
+    </div>
+  </section>
+
+  <!-- Galería -->
+  <section class="section" id="galeria">
+    <div class="container">
+      <p class="eyebrow">Trabajos realizados</p>
+      <h2>Galería</h2>
+      <div class="gallery">
+        <img src="assets/fotos/g1.jpg" alt="Grúa con pluma extendida" loading="lazy">
+        <img src="assets/fotos/g2.jpg" alt="Tractocamión con grúa en planta" loading="lazy">
+        <img src="assets/fotos/g3.jpg" alt="Equipo embalado sobre lowboy" loading="lazy">
+        <img src="assets/fotos/g4.jpg" alt="Grúa en obra al atardecer" loading="lazy">
+        <img src="assets/fotos/g5.jpg" alt="Grúa dentro de nave industrial" loading="lazy">
+        <img src="assets/fotos/g6.jpg" alt="Montacargas moviendo maquinaria" loading="lazy">
+        <img src="assets/fotos/g7.jpg" alt="Grúa con carga de tubería" loading="lazy">
+        <img src="assets/fotos/g8.jpg" alt="Montacargas de alta capacidad" loading="lazy">
+        <img src="assets/fotos/g9.jpg" alt="Tractocamión GS RAL" loading="lazy">
+        <img src="assets/fotos/g10.jpg" alt="Grúa y equipo en planta" loading="lazy">
+        <img src="assets/fotos/g11.jpg" alt="Montacargas en maniobra exterior" loading="lazy">
+        <img src="assets/fotos/g12.jpg" alt="Grúa al atardecer" loading="lazy">
+      </div>
     </div>
   </section>
 
@@ -206,6 +287,10 @@
           <li>
             <strong>Dirección</strong>
             <a href="https://maps.app.goo.gl/u3Bs2ac6mLVMjmga7" target="_blank" rel="noopener">Calle Gama #40-1, esquina con Vito Alessio Robles, Col. Omega, C.P. 25100, Saltillo, Coahuila</a>
+          </li>
+          <li>
+            <strong>Sucursal</strong>
+            <a href="https://www.google.com/maps/search/?api=1&query=Blvd+Venustiano+Carranza+4409,+Virreyes+Residencial,+25230+Saltillo,+Coahuila" target="_blank" rel="noopener">Blvd. V. Carranza #4409, Col. Virreyes Residencial, C.P. 25230, Saltillo, Coahuila</a>
           </li>
           <li><strong>Teléfono oficina</strong><a href="tel:8444390532">844 439 0532</a></li>
           <li><strong>WhatsApp oficina</strong><a href="https://wa.me/528445376628" target="_blank" rel="noopener">844 537 6628</a></li>
