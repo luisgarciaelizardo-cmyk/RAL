@@ -136,9 +136,9 @@ img { max-width: 100%; display: block; }
 .card p { color: var(--gray-500); font-size: 0.95rem; }
 
 /* Renta de equipos */
-.equipment { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.equipment { grid-template-columns: repeat(3, 1fr); }
 .equip { background: var(--black); color: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
-.equip img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.equip img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
 .equip div { padding: 1rem 1.2rem 1.2rem; }
 .equip h3 { font-size: 1.4rem; }
 .equip__cap { color: var(--accent-light); font-weight: 600; font-size: 1.1rem; }
@@ -260,6 +260,8 @@ img { max-width: 100%; display: block; }
   .nav a { padding: 0.8rem 0; border-bottom: 1px solid #eee; }
   .nav .btn { margin-top: 0.8rem; text-align: center; border-bottom: 0; }
   .about, .contact, .mv { grid-template-columns: 1fr; }
+  .equipment { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .equip img { aspect-ratio: 1; }
   .hero { padding: 3rem 0 5rem; }
   .hero__grid { grid-template-columns: 1fr; gap: 2rem; }
   .hero__logo { order: -1; }
